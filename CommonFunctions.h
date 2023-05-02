@@ -12,8 +12,8 @@
 #include <Eigen/Sparse>
 #include <json/json.h>
 
-#include "tbb/blocked_range.h"
-#include "tbb/parallel_for.h"
+#include <tbb/blocked_range.h>
+#include <tbb/parallel_for.h>
 
 #ifndef GRAIN_SIZE
 #define GRAIN_SIZE 10

@@ -13,6 +13,7 @@ if (GUROBI_CXX_LIBRARY)
   set(GUROBI_INCLUDE_DIRS "${GUROBI_INCLUDE_DIR}" )
   set(GUROBI_LIBRARIES "${GUROBI_LIBRARY};${GUROBI_CXX_LIBRARY}" )
 else (GUROBI_CXX_LIBRARY)
+  set(GUROBI_HOME "$ENV{GUROBI_HOME}")
 
 find_path(GUROBI_INCLUDE_DIR 
           NAMES gurobi_c++.h
@@ -22,7 +23,8 @@ find_path(GUROBI_INCLUDE_DIR
           )
 
 find_library( GUROBI_LIBRARY
-              NAMES gurobi90
+              NAMES gurobi100
+                    gurobi90
                     gurobi45
                     gurobi46
                     gurobi50

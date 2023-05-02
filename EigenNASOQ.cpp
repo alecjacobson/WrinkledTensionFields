@@ -1,4 +1,4 @@
-#include <nasoq_eigen.h>
+#include <nasoq/nasoq_eigen.h>
 #include <unsupported/Eigen/SparseExtra>
 
 #include <fstream>

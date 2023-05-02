@@ -5,18 +5,8 @@
 #  LIBIGL_INCLUDE_DIR - **the** LIBIGL include directory
 find_path(LIBIGL_INCLUDE_DIR igl/readOBJ.h
     PATHS
-        ${CMAKE_SOURCE_DIR}/../..
-        ${CMAKE_SOURCE_DIR}/..
-        ${CMAKE_SOURCE_DIR}
-        ${CMAKE_SOURCE_DIR}/../tools/libigl
-        ${CMAKE_SOURCE_DIR}/libigl
-        ${CMAKE_SOURCE_DIR}/../libigl
-        ${CMAKE_SOURCE_DIR}/../../libigl
         ${CMAKE_SOURCE_DIR}/external/libigl
         ${CMAKE_SOURCE_DIR}/../external/libigl
-        /usr
-        /usr/local
-        /usr/local/igl/libigl
     PATH_SUFFIXES include
 )
 
